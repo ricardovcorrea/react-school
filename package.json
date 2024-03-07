@@ -1,0 +1,23 @@
+{
+  "name": "school-react",
+  "scripts": {
+    "dev": "webpack serve --open",
+    "babel": "babel src -d dist",
+    "webpack": "webpack --config webpack.config.js",
+    "sass": "sass src/index.scss build/styles.css",
+    "build": "npm run babel && npm run webpack && npm run sass"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.71.1",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}
